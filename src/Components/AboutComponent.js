@@ -3,10 +3,10 @@ import React from "react";
 const About = () => {
     return (
         <>
-            <div className="container">
-                <h2>About Me</h2>
-                <div className="row">
-                    <div className="col-8">
+            <div className="container text-center">
+                <h1 text-center>About Me</h1>
+                <div className="row ">
+                    <div className="col-8 mx-auto">
                         <p>
                             I am a dedicated new developer who enjoys building
                             responsive web. Throughout the past eight years, I

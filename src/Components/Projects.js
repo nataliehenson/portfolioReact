@@ -4,23 +4,23 @@ import Card from "react-bootstrap/Card";
 const Projects = () => {
     return (
         <>
-            <div className="container">
+            <div className="container text-center">
                 <h2>Projects</h2>
                 <div className="row">
-                    <div className="col">
-                        {projectsList.map((project) => (
+                    {projectsList.map((project) => (
+                        <div className="col">
                             <Card style={{ width: "18rem" }}>
                                 <Card.Img variant="top" src={project.image} />
                                 <Card.Body>
                                     <Card.Title>{project.name}</Card.Title>
                                     <Card.Text>{project.description}</Card.Text>
-                                    <Card.Link href="#">
-                                        {project.link}
+                                    <Card.Link href={project.link}>
+                                        {project.linkname}
                                     </Card.Link>
                                 </Card.Body>
                             </Card>
-                        ))}
-                    </div>
+                        </div>
+                    ))}
                 </div>
             </div>
             {/* <div className="container">
@@ -63,33 +63,25 @@ const projectsList = [
         image: "../img/IMG_6433.jpg",
         description:
             "Mobile App UI mockup that allows users to search through colleges, uses Redux to mark them Favorites, and uses hooks for a to-do list. Built with React Native and JavaScript to support first-generation students on the steps to postsecondary",
-        link: "https://www.danescozzari.com/",
+        link: "https://github.com/nataliehenson/COllegeBound",
+        linkname: "Github Link",
     },
     {
         id: 1,
-        name: "",
-        image: "",
-        description: "",
-    },
-    {
-        id: 2,
         name: "Dane Scozzari",
-        image: "",
+        image: "../img/musicianshot.png",
         description:
             "Web Application for a jazz musician to publish gigs, listen to his music, and submit a contact form that sends to the musician directly. Built with React, React-Strap, Javascript, and CSS",
         link: "https://www.danescozzari.com/",
+        linkname: "Live Site",
     },
     {
-        id: 3,
+        id: 2,
         name: "SoilCycle",
-        image: "",
+        image: "../img/SoilCyclePic.png",
         description:
             "Single page web application for a small environmental nonprofit based on hiring youth to collect compost. Built using Bootstrap, Javascript, HTML, and CSS",
-    },
-    {
-        id: 4,
-        name: "",
-        image: "",
-        description: "",
+        link: "https://github.com/nataliehenson/soilCycle",
+        linkname: "Github Link",
     },
 ];

@@ -3,16 +3,16 @@ import React from "react";
 const TechStack = () => {
     return (
         <>
-            <div class="container">
-                <h2>Tech Toolkit</h2>
+            <div class="container text-center">
+                <h1>Tech Toolkit</h1>
                 <div class="row text-center">
-                    <div class="col-md-6">
+                    {/* <div class="col ">
                         <p>
                             React, React-Bootstrap, Javascript, CSS, Bootstrap,
                             Sass, HTML, Github, VS Code, Moqups
                         </p>
-                    </div>
-                    <div class="col-md-6">
+                    </div> */}
+                    <div class="col">
                         <p>
                             <i class="fa-brands fa-react fa-2xl"></i>
                             <i class="fa-brands fa-js fa-2xl"></i>

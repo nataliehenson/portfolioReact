@@ -6,12 +6,12 @@ const Home = () => {
         <>
             <div className="container">
                 <div className="row ">
-                    <div className="col natalie">
+                    <div className="col my-auto">
                         <h3>Hi, I'm</h3>
                         <h1>Natalie Henson,</h1>
                         <h3>a Full Stack Software Developer</h3>
                     </div>
-                    <div className="col natalie">
+                    <div className="col-md-5">
                         <img src={headshot} alt="headshot" />
                     </div>
                 </div>
